@@ -1,0 +1,21 @@
+body {
+  font-family: Arial;
+  background-color: skyblue;
+  overscroll-behavior: none;
+}
+
+#content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.dot {
+  background-color: black;
+  border-radius: 50%; /* Make it a circle */
+  width: 6px;
+  height: 6px;
+  position: absolute;
+}
