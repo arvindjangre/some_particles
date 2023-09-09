@@ -20,36 +20,7 @@
 </body>
 <script type="text/javascript" src="js/ground.js"></script>
 <script type="text/javascript">
-  var canvas = document.createElement('canvas');
-  canvas.width = 400;
-  canvas.height = 400;
-  canvas.style = `
-    background-color: white;
-    box-shadow: 0px 0px 10px 2px black;
-    `;
-  var container = document.getElementById('container');
-  container.appendChild(canvas);
-
-  context = canvas.getContext('2d');
-  var dot = document.createElement('dot');
-  dot.classList.add('dot');
-  canvas.appendChild(dot);
-  var x = 1; var y = 100;
-  // Draw a dot at coordinates (100, 100)
-  function drawDot() {
-    context.clearRect(0, 0, canvas.width, canvas.height);
-    context.beginPath();
-    context.arc(x, y, 3, 0, Math.PI * 2);
-    context.fillstyle = 'black';
-    context.fill();
-    context.closePath();
-  
-    if( x < 350) {
-      x += 1; // x-coordinate for next frame
-      dot.style.left = x * 40 + 'px';
-      requestAnimationFrame(drawDot);
-    }
-  }
-  drawDot();
+  update();
 </script>
+
 </html>
