@@ -1,6 +1,6 @@
 body {
   font-family: Arial;
-  background-color: skyblue;
+  background-color: rgb(48, 48, 48);
   overscroll-behavior: none;
 }
 
@@ -10,6 +10,9 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+h1 {
+  color:aquamarine;
 }
 
 .dot {
